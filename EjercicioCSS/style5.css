@@ -1,0 +1,11 @@
+body {
+    color: red;
+    font-size: 20pt;
+}
+    
+/* Definimos un tipo especial para los formularios.*/
+.listaschulas {
+    list-style-image: url("img/boton.png");
+    color: black;
+    font-family: 'Arial, Verdana';
+}

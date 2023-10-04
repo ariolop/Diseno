@@ -1,0 +1,12 @@
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

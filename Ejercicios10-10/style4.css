@@ -1,0 +1,31 @@
+body{
+    color: rgb(162, 0, 255);
+}
+
+/* Definimos un tipo especial para los formularios.*/
+
+.especial {
+    border-top: dashed;
+    border-bottom: dashed;
+    border-right: dashed;
+    border-left: dashed;
+    color: rgb(0, 0, 255);
+    font-size: 14pt;
+    border-bottom: thick solid rgb(0, 136, 255);
+}
+
+/* Creamos un borde de un pixel y punteado */
+form input, textarea {
+    border: 1px dashed rgb(6, 121, 128);    
+    color: rgb(2, 88, 114);
+}
+
+h1 { 
+    border-bottom: thick solid rgb(0, 225, 255) 
+}
+
+input[type="submit"]:hover, input[ type="reset"]:hover
+{
+    background-color: lightcoral;
+}
+

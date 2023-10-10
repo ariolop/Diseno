@@ -1,14 +1,14 @@
 /* Estilos para tablas */
 
 table {
-border: lpx solid gray;
+    border: 1px solid gray;
 }
 
 thead {
-background-color: gray;
-color: white;
-font-style: bold;
-text-align: center;
+    background-color: gray;
+    color: white;
+    font-style: bold;
+    text-align: center;
 }
 
 tbody {

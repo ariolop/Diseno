@@ -1,0 +1,42 @@
+#cabecera {
+    height: 200px;    
+    width: 100%;
+    background-color: red;
+}
+    
+#lateral {
+    left: 2px;
+    top: 204px;
+    width: 200px;
+    float: left;    
+    min-height: 200px;
+    background-color: yellow;
+}
+
+#lateralderecho {
+    right: 0px;
+    top: 204px;
+    width: 200px;
+    height: 200px;
+    float: right;
+    background-color: lightGreen;
+}
+    
+    
+#principal {
+    margin-left: 200px;
+    margin-right: 200px;
+    right: -201px;
+    top: 204px;
+    width: 400px;
+    background-color: lightGrey;
+    margin-bottom: 10px;
+}
+    
+#pie {
+    width: 100px;
+    height: 200px;
+    bottom: 0px;
+    background-color: rgb(147, 208, 228);
+    clear: both;
+}

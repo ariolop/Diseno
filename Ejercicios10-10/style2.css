@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+    }
+    
+#cabecera {
+    background: rgb(220, 230, 167);
+    padding: 15px;
+}
+
+#central {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+#listal {
+    list-style: none;
+}
+
+#lista2 {
+    list-style: square;
+}
+
+#lista2 li {
+    background-color: rgb(150, 227, 229);
+    border: 1px solid black;
+    width: 20%;
+}
+
+#lista3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista3 a{
+    color: black;
+}
+    
+#lista3 li {
+    display: inline;
+    padding: 2px;
+    background-color: rgb(150, 227, 229);
+    border: 1px solid black;
+}
+
+/* Estilo para el li al pasar por encima */
+#lista3 li:hover {
+    background-color: white;
+}
+    
+#lista3 a:hover {
+    color: blue;
+    background-color: white; 
+}
+
+#pie {
+    clear: both;
+    text-align: center;
+    background-color: green;
+}

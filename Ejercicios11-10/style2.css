@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+}
+
+#cabecera {
+    background: red;
+    padding: 15px;
+}
+
+#central {
+    width: 65%;
+}
+
+#lateral {
+    float: right;  
+    top: 70px;
+    right: Opx;
+    width: 30%;  
+    height: 100%;
+    background: gray;
+}
+
+#pie {
+    clear: both;
+    text-align: center;
+    background-color: green;
+}
+

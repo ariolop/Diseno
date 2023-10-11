@@ -1,0 +1,55 @@
+#container {
+    font-family: Arial, Verdana;
+    font-size: 12pt;
+    background-image: url('imagenes/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+#container {
+    width: 100%;
+    height: 100%;
+}
+    
+#cabecera {
+    background: linear-gradient(90deg, rgba(143,232,169,1) 0%, rgba(136,212,227,1) 100%);    
+    padding: 15px;
+    height: 100px;
+}
+
+#izquierda{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: gray;
+    bottom: 0;
+}
+
+#derecha {
+    float: right;
+    width: 20%;
+    height: 100%;
+    background: lightGray;
+    bottom: 0;    
+}
+    
+#centro {
+    float: left;
+    width: 55%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    color: rgb(197, 194, 194);
+}
+
+#pie {
+    clear: both;
+    text-align: center;
+    background-color: green;
+}
+
+button{
+    background: linear-gradient(90deg, rgba(143,232,169,1) 0%, rgba(115,98,230,1) 36%, rgba(136,212,227,1) 100%);
+    width: 100px;
+    height: 30px;
+}

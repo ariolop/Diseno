@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(189, 236, 189);
+}
+
+#lista li{
+    display: inline-block;
+    position: relative;
+}
+
+#lista{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px rgb(89, 89, 224);
+    padding: 10px;
+}
+
+#opcionesEnlaces{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#opcionesDescargas{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+}
+
+#opcionesEnlaces li{
+    background-color: lightcyan;
+    width: 100px;
+}
+
+#opcionesEnlaces li:hover{
+    background-color: blue;
+    color: white ;
+}
+
+#opcionesDescargas li{
+    background-color: lightcyan;
+    width: 100px;
+}
+
+#opcionesDescargas li:hover{
+    background-color: blue;
+    color: white ;
+}
+
+
+#tabla{
+    width: 100%;
+    text-shadow: 2px 2px 2px hsl(180, 50%, 40%);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+#enlaces:hover #opcionesEnlaces{
+    visibility: visible;
+    display: block;
+}
+
+#descargas:hover #opcionesDescargas{
+    visibility: visible;
+    display: block;
+}

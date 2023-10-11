@@ -1,0 +1,37 @@
+#lista > *{
+    display: inline;
+}
+
+#lista * {
+    width: 100px;
+    height: 100px;
+}
+
+li{
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+#opcionesEnlaces{
+    display: none;
+}
+
+#enlaces:hover #opcionesEnlaces{
+    display: block;
+    margin: 5px;
+}
+
+#opcionesDescargas{
+    display: none;
+}
+
+#descargas:hover #opcionesDescargas{
+    display: block;
+    margin: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+

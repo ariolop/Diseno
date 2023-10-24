@@ -1,0 +1,54 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+
+    flex-direction: column;
+
+    transition-property: left;
+    transition-duration: 2s;
+}
+
+.cajas{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px red; 
+    box-shadow: 5px 5px 10px red; 
+    margin-bottom: 20px;
+    position: relative;
+    left: 0;
+}
+
+.caja1{
+    transition-timing-function: ease-in;
+}
+
+.caja2{
+    transition-timing-function: linear;
+}
+
+.caja3{
+    transition-timing-function: ease-out;
+}
+
+.caja4{
+    transition-timing-function: ease-out;
+}
+
+.caja5{
+    transition-timing-function: ease-out;
+}
+
+.container:hover *{
+ /* width: 400px;
+    height: 400px;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px rgb(9, 210, 255);   
+    box-shadow: 10px 10px 10px rgb(9, 210, 255);  
+    padding: 20px 0 0 20px;
+    background-color: blue; */
+    
+    left: 92%;
+}
+

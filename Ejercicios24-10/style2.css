@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Jedi;
+    src: url(star_jedi/starjedi/Starjedi.ttf);
+}
+
+@keyframes titulo1 {
+    from{
+        font-size: 80px;
+        opacity: 0;
+    }
+    
+    12%{
+        font-size: 75px;
+    }
+
+    25%{
+        font-size: 70px;
+    }
+
+    37%{
+        font-size: 65px;
+    }
+
+    50%{
+        font-size: 60px;
+        opacity: 1;
+    }
+
+    74%{
+        opacity: 1;
+    }
+
+    75%{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(0);
+    }
+}
+
+@keyframes titulo2 {
+    from{
+        font-size: 0px;
+        opacity: 0;
+    }
+
+    25%{
+        font-size: 10px;
+    }
+
+    50%{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    85%{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
+.caja{
+    border: 1px solid black;
+    background-color: black;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    color: transparent;
+    padding: 20px;
+    font-weight: 900;
+}
+
+.caja h1{
+    color: transparent;
+    -webkit-text-stroke: 1px yellow;
+    margin: 0;
+    padding: 0;
+    font-family: Jedi;
+    animation: titulo1 8s infinite ease-out both;
+}
+
+.caja h2{
+    font-family: Kanit;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 0;
+    animation: titulo2 6s infinite linear both;
+}

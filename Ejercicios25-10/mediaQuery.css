@@ -1,0 +1,222 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.nav{
+    background-color: lightgreen;
+    width: 100%;
+    display: flex;
+}
+
+    .logo{
+        background-color: aqua;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        background-color: red;
+        width: 70%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .lista{
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista li{
+            display: inline-block;
+            font-size: 23px;
+            margin: 0px 5px;
+        }
+    
+
+.principal{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: blue;
+}
+
+    .section{
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+        article{
+            width: 350px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            height: 240px;
+            padding: 10px;
+            margin: 0px 10px;
+        }
+    
+    .aside{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+        .publicidad{
+            width: 90%;
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 5px;
+        }
+
+            .publicidad div{
+                background-color: rgb(252, 252, 121);
+                flex: 1 1 auto;
+                margin-bottom: 10px;
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .publicidad img{
+                width: 80%;  
+            }
+
+            .publicidad h3{
+                margin: 10px;
+            }
+
+
+
+.footer{
+    width: 100%;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+    .contenido{
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .contenido > div{
+        border: 1px solid black;
+        text-align: center;
+        width: 25%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        margin: 0px 10px;
+    }
+
+
+    .contenido ul{
+        padding: 0;
+    }
+
+        .contenidoMapa{
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+        }
+
+        .mapa{
+            width: 80%;
+            height: 180px;
+            background-color: blue;
+        }
+
+@media (max-width: 1200px) {
+    .contenido > div{
+        width: 200px;
+    }
+
+    /* .mapa{
+        width: 90%;
+        height: 130px;
+        background-color: blue;
+    } */
+}
+
+@media (max-width: 768px){
+    .lista li{
+        font-size: 15px;
+    }
+
+    .logo h1{
+        font-size: 20px;
+    }
+
+    .section{
+        flex-flow: column nowrap;
+        height: 800px;
+    }
+
+    article{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    article:last-child{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 576px)
+{
+    .nav{
+        flex-flow: column nowrap;
+    }
+
+
+    .logo{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .principal{
+        flex-flow: column nowrap;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .aside{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .publicidad{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .contenido{
+        flex-flow: column wrap;
+    }
+
+    .contenido > div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

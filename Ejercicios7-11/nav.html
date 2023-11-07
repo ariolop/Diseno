@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="container bg-primary p-2 d-flex align-items-center">
-        <img class="rounded" src="fotoMenu.jpeg" alt="Foto menu bob esponja">
-        <nav class="mx-5">
-            <button class="btn btn-success">Inicio</button>
-            <div class="dropstart btn-group">
+        <img class="rounded flex-fill" src="fotoMenu.jpeg" alt="Foto menu bob esponja">
+        <nav class="mx-3 d-flex flex-fill">
+            <button class="btn btn-success flex-fill mx-1">Inicio</button>
+            <div class="dropend btn-group flex-fill mx-1">
                 <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Párrafo</button>
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">Texto</li>
@@ -24,7 +24,7 @@
                     <li class="dropdown-item">Tamaño</li>
                 </ul>
             </div>
-            <div class="dropup btn-group">
+            <div class="dropup btn-group flex-fill mx-1">
                 <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Fondo</button>
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">Colores</li>
@@ -37,7 +37,7 @@
                 </ul>
                 
             </div>
-            <div class="dropdown btn-group">
+            <div class="dropdown btn-group flex-fill mx-1">
                 <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Títulos</button>
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">Titulos</li>
@@ -49,14 +49,24 @@
                 </ul>
                 
             </div>
-            <div class="dropend btn-group">
+            <div class="dropstart btn-group flex-fill mx-1">
                 <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Sombras</button>
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">Sombras</li>
                     <li class="dropdown-item">Ninguna</li>
                     <li class="dropdown-item">Pequeña</li>
                     <li class="dropdown-item">Mediano</li>
-                    <li class="dropdown-item">Grande</li>
+                    <li class="dropdown-item" data-bs-toggle="dropdown">
+                        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Sombras</button>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Multi level 1</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Multi level 2</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>

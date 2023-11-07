@@ -1,0 +1,26 @@
+.container{
+    margin: 50px 150px 0;
+}
+
+.btn{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.btn-primary{
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+
+.btn:active{
+    background-color: rgb(103, 183, 209);
+}
+
+.oculto{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}

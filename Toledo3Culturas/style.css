@@ -2,12 +2,46 @@
     height: 500px;
 }
 
-.carousel{
-    height: fit-content;
-    background-color: blue;
+.nav-item{
+    font-size: 14px;
 }
 
-.botonCarousel{
-    width: 30px;
-    height: 30px;
+.carousel{
+    height: fit-content;
+}
+
+.carousel .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.texto{
+    color: goldenrod;
+    font-size: 24px;
+}
+    .texto p{
+        letter-spacing: 0px;
+    }
+
+.h3{
+    color: goldenrod;
+}
+
+.menu{
+    background-color: white;
+}
+
+.card-title, .precio{
+    color: goldenrod;
+}
+
+.precio{
+    font-size: 20px;
+}
+
+.precio, .persona{
+    display: inline;
 }

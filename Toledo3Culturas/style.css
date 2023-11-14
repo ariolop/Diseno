@@ -1,0 +1,13 @@
+.carousel-item{
+    height: 500px;
+}
+
+.carousel{
+    height: fit-content;
+    background-color: blue;
+}
+
+.botonCarousel{
+    width: 30px;
+    height: 30px;
+}

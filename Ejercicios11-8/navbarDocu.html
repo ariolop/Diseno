@@ -7,160 +7,191 @@
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
 </head>
 <body>
+    <!--
+        aria-controls="elemento" -> Identifica el contenido que es controlado por el elemento.
+        aria-expanded="boolean" -> Indica si un control está expandido o contraído, y si los elementos controlados se muestran u ocultan.
+        aria-label="texto" -> Indica una cadena que etiqueta un elemento.
+        aria-current="texto" -> Indica que es el elemento. Por ejemplo:"page", página principal
+        aria-labelledby="texto" -> Identifica al elemento al que se aplica
+    -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <!-- Enlace a modo de título alineado a la izquierda -->
             <!-- Este enlace suele servir para volver a la página principal -->
-          <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Navbar</a>
             <!-- Este es el icono para el menú de hamburguesa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Este es el menu donde tenemos los enlaces de las distintas páginas web -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Este es el menu donde tenemos los enlaces de las distintas páginas web -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- Enlace activo (active) -->
-              <li class="nav-item">
+                <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
-              </li>
-              <!-- Submenu desplegable -->
-              <li class="nav-item dropdown">
+                </li>
+                <!-- Submenu desplegable -->
+                <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                    Dropdown
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </li>
-              <!-- Enlace deshabilitado (disabled) -->
-              <li class="nav-item">
+                </li>
+                <!-- Enlace deshabilitado (disabled) -->
+                <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+                </li>
             </ul>
             <!-- Formulario para buscar dentro de la página web -->
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+    </nav>
 
-      <!-- ######################################################## -->
+    <!-- ######################################################## -->
 
-      <!-- Enlace a modo de título en el menu alineado a la izquierda -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            </div>
-        </nav>
-        
-        <!-- Título en el menu alineado a la izquierda -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Navbar</span>
-            </div>
-        </nav>
-
-        <!-- Imagen con enlace en el menu alineado a la izquierda -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="iconoB.jpg" alt="" width="30" height="24">
-                </a>
-            </div>
-        </nav>
-
-        <!-- Imagen con texto y enlace en el menu alineado a la izquierda -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    Bootstrap
-                </a>
-            </div>
-        </nav>
-
-      <!-- ######################################################## -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Enlace a modo de título en el menu alineado a la izquierda -->
+    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- Enlace activo (active) -->
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <!-- Submenu desplegable -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <!-- Enlace deshabilitado (disabled) -->
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-          </div>
+        <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+    </nav>
+    
+    <!-- Título en el menu alineado a la izquierda -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+        </div>
+    </nav>
 
-          <form class="d-flex">
+    <!-- Imagen con enlace en el menu alineado a la izquierda -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="iconoB.jpg" alt="" width="30" height="24">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Imagen con texto y enlace en el menu alineado a la izquierda -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+
+    <!-- ######################################################## -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Enlace activo (active) -->
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <!-- Submenu desplegable -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <!-- Enlace deshabilitado (disabled) -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+        </form>
+    </div>
+    </nav>
 
-      <!-- ######################################################## -->
+    <!-- ######################################################## -->
 
-      <!-- Letras blancas, fondo negro -->
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-            </a>
+    <!-- Letras blancas, fondo negro -->
+    <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+    </div>
+    </nav>
+    
+    <!-- Letras blancas, fondo azul -->
+    <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+    </div>
+    </nav>
+    
+    <!-- Letras negras, fondo personalizado (style prohibido) -->
+    <nav class="navbar navbar-light" style="background-color: rgb(161, 206, 239);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+    </div>
+    </nav>
+
+    <!-- ######################################################## -->
+
+    <!-- Al tener un contenedor padre con la clase "container",
+        la etiqueta "nav" no ocupa el 100% del ancho (ocupa aprox 70%-80%)-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+          </div>
+        </nav>
+    </div>
+
+    <!-- Al no tener contenedor padre con la etiqueta "container",
+        la etiqueta "nav" ocupa el 100% -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-md"> <!-- La clase "container-md" hace que el contenido tenga margen -->
+          <a class="navbar-brand" href="#">Navbar</a>
         </div>
-      </nav>
-        
-      <!-- Letras blancas, fondo azul -->
-      <nav class="navbar navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-            </a>
-        </div>
-      </nav>
-      
-      <!-- Letras negras, fondo personalizado (style prohibido) -->
-      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="iconoB.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-            </a>
-        </div>
-      </nav>
+    </nav>
+
+
+
     <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
 </body>

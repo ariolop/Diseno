@@ -18,6 +18,10 @@
     margin-right: 5px;
 }
 
+.gold{
+    color: goldenrod;
+}
+
 .texto{
     color: goldenrod;
     font-size: 24px;
@@ -38,10 +42,80 @@
     color: goldenrod;
 }
 
+.card-title{
+    font-size: 15px;
+}
+
 .precio{
     font-size: 20px;
 }
 
 .precio, .persona{
     display: inline;
+}
+
+.banner img{
+    height: 200px;
+    width: 100%;
+}
+
+.banner{
+    display: flex;
+    background-image: url(imagenes/banner.jpg);
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner button{
+    font-size: 20px;
+    width: 500px;
+    height: 46px;
+    font-size: 21px;
+    transition: all 0.2s linear;
+}
+
+.banner button:hover{
+    border: 0px !important;
+    width: 520px;
+    height: 50px;
+}
+
+.banner button:hover::after{
+    content: " >";
+}
+
+.card-sombra{
+    transition: all 0.1s linear;
+}
+
+.card-sombra:hover{
+    box-shadow: 17px 14px 30px -1px rgba(0,0,0,0.5);
+}
+
+.bannerContacto{
+    height: 120px;
+    background-image: url(imagenes/Contacto.jpg);
+}
+
+.bannerContacto button{
+    transition: all 0.2s linear;
+}
+
+.bannerContacto button:hover{
+    background-color: rgba(217, 165, 33, 0.5);
+    border: 0px !important;
+}
+
+.bannerContacto button:hover::after{
+    content: " >";
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer img{
+    width: 100%;
 }

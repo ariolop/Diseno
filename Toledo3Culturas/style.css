@@ -2,8 +2,16 @@
     height: 500px;
 }
 
+.carousel-item img{
+    width: 100%;
+}
+
 .nav-item{
     font-size: 14px;
+}
+
+.menuGrande{
+    width: 240px;
 }
 
 .carousel{

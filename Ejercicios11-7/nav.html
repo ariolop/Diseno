@@ -52,23 +52,27 @@
             <div class="dropstart btn-group flex-fill mx-1">
                 <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Sombras</button>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-header">Sombras</li>
-                    <li class="dropdown-item">Ninguna</li>
-                    <li class="dropdown-item">Pequeña</li>
-                    <li class="dropdown-item">Mediano</li>
-                    <li class="dropdown-item" data-bs-toggle="dropdown">
-                        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Sombras</button>
-                        <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="#">Multi level 1</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#">Multi level 2</a>
-                            </li>
-                        </ul>
+                    <li class="dropdown-header"></li>
+                    <li><a href="#" class="dropdown-item">Ninguna</a></li>
+                    <li><a href="#" class="dropdown-item">Ninguna</a></li>
+                    <li><a href="#" class="dropdown-item">Ninguna</a></li>
+                    <li>
+                        <div class="dropstart">
+                            <button class="btn btn-success dropdown-item dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdownSub">Sombras</button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                <a class="dropdown-item" href="#">Multi level 1</a>
+                                </li>
+                                <li>
+                                <a class="dropdown-item" href="#">Multi level 2</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
+
+           
         </nav>
     </div>
 

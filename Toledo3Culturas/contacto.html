@@ -46,48 +46,95 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 main">
         <div class="row">
             <div class="col-9">
                 <div class="parrafo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia quia numquam consectetur fugiat culpa laudantium distinctio provident nostrum rem. Sunt natus nobis, cumque perspiciatis doloremque nulla placeat quo? Perferendis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat natus corporis et minus impedit sed ducimus exercitationem harum ratione possimus assumenda esse nobis dolore vero, ab vel officiis voluptas quo?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, expedita, reprehenderit fugit eos ipsa illo consectetur delectus ad dolor voluptatibus quibusdam perferendis suscipit reiciendis deleniti accusamus aut nulla. Est, veritatis.</p>
+                    <p>
+                        Rellene este formulario de <strong>contacto</strong> para reservar su ruta. Si realiza su reserva para una <strong>ruta por Toledo</strong> a través de esta Web, por e-mail, <strong>recibirá confirmación de la reserva en unas horas</strong>. Llámenos si en el plazo de uno o dos días no has recibido ninguna respuesta. En todo caso <strong>facilite un número de teléfono móvil</strong> por si tenemos que contactar con usted.
+                    </p>
+                    <p>
+                        Si desea realizar una reserva en nuestras rutas programadas, complete el formulario que aparece en cualquier página al pulsar sobre el botón en la zona derecha <strong>¡RESERVAR ESTA RUTA!</strong> o llámenos al <strong>teléfono</strong> <span class="text-danger fw-bold">603 420 820</span>. Si lo que desea es información en general, o en particular sobre alguna de las rutas o visitas a la carta, rellene el formulario de contacto que encontrará a continuación. 
+                    </p>
+                    <p>
+                        Puede utilizar este formulario para enviarnos sus sugerencias, quejas y reclamaciones e intentaremos contactar para resolver sus dudas lo antes posible.
+                    </p>
                 </div>
     
-                <div class="formulario mt-5">
+                <div class="formulario my-5">
                     <h5>Formulario de Contacto</h5>
-                    <form class="form" action="#" method="get">
+                    <form class="form formContacto" action="#" method="get">
                         <div class="row">
                             <div class="col-6">
-                                <input class="form-control" type="text" placeholder="Nombre*">
+                                <input class="form-control border-0 p-3" type="text" placeholder="Nombre*">
                             </div>
                             <div class="col-6">
-                                <input class="form-control" type="text" placeholder="Dirección de correo-e*">
+                                <input class="form-control border-0 p-3" type="text" placeholder="Dirección de correo-e*">
                             </div>
                         </div>
                         <div class="row my-4">
                             <div class="col-6">
-                                <input class="form-control" type="text" placeholder="Nº teléfono*">
+                                <input class="form-control border-0 p-3" type="text" placeholder="Nº teléfono*">
                             </div>
                             <div class="col-6">
-                                <input class="form-control" type="text" placeholder="Asunto*">
+                                <input class="form-control border-0 p-3" type="text" placeholder="Asunto*">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <textarea class="form-control" rows="8" type="text" placeholder="Mensaje*"></textarea>
+                                <textarea class="form-control border-0 p-3" rows="8" type="text" placeholder="Mensaje*"></textarea>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-12">
+                                <p class="fw-bold">Política de Privacidad</p>
+                            </div>
+                            <div class="col-12">
+                                <input id="aceptar" name="aceptar" type="checkbox">
+                                <label for="aceptar">Por favor, aceptar nuestra <a class="fw-bold text-dark">Política de Privacidad</a></label>
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-11"></div>
+                            <div class="col-1">
+                                <input type="submit" value="Enviar" class="btn btn-lg border-1 border-warning text-warning bg-white">
                             </div>
                         </div>
                     </form>
                 </div>
+                <div class="rutasGrupos">
+                    <p>Si ya ha elegido la ruta a realizar, envíenos una lista con los monumentos que desea visitar o de la ruta que le gustaría realizar y le enviaremos un presupuesto a medida. No sólo realizamos las rutas de nuestro programa, también planificamos rutas a medida de las necesidades del cliente o grupo <span class="text-danger">(consultar rutas para grupos).</span></p>
+                </div>
             </div>
-            <div class="col-2">
-                <h6>Busca tu ruta</h6>
-                <form action="">
-                    <input type="search" name="Buscar" id="">
-                </form>
-                <h6>Contacta con nosotros</h6>
+            <div class="col-3">
+                <div class="mb-5">
+                    <h5 class="gold">Busca tu ruta</h5>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h5 class="gold">Contacta con nosotros</h5>
+                    <p class="fw-light small">603 420 820 info@toledo3culturas.com</p>
+                </div>
+                <div class="border border-2 border-success p-1">
+                    <h4 class="text-decoration-underline">Toledo 3 Culturas</h4>
+                    <p>Valoración de viajeros de Tripadvisor</p>
+                    <p>111 opiniones</p>
+                    <p>Clasificación de Tripadvisor</p>
+                    <p>Nº 19 de 68 Visitas guiadas en Toledo</p>
+                    <p>Opiniones recientes de viajeros</p>
+                    <p>"Redescubrimiento de Toledo"</p>
+                    <p>"Recomendable"</p>
+                    <p>"Muy buena visita"</p>
+                    <p>"Excelente!"</p>
+                    <p>"Un paseo curioso y esclarecedor por plazas..."</p>
+                    <a href="#">Lee opiniones</a>
+                    <a href="#">Escribe una opinion</a>
+                </div>
             </div>
         </div>
     </div>

@@ -127,3 +127,12 @@
 .footer img{
     width: 100%;
 }
+
+.formContacto input, .formContacto textarea{
+    background-color: rgb(238,238,238);
+}
+
+.main{
+    padding-left: 150px;
+    padding-right: 150px;
+}

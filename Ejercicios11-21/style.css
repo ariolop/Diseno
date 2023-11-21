@@ -1,0 +1,23 @@
+.bloque1, .bloque2{
+    height: 200px;
+    width: 200px;
+}
+
+.bloqueInterno{
+    width: 100px;
+    height: 100px;
+}
+
+.bloqueBorde{
+    width: 100px;
+    height: 100px;
+}
+
+.bloqueTamaño{
+    width: 500px;
+    height: 200px;
+}
+
+span{
+    background-color: lightblue;
+}

@@ -1,9 +1,15 @@
+.carousel{
+    height: 500px;
+}
+
 .carousel-item{
     height: 500px;
 }
 
 .carousel-item img{
     width: 100%;
+    object-fit: cover;
+    height: 500px;
 }
 
 .nav-item{
@@ -50,10 +56,6 @@
     color: goldenrod;
 }
 
-.card-title{
-    font-size: 15px;
-}
-
 .precio{
     font-size: 20px;
 }
@@ -93,12 +95,12 @@
     content: " >";
 }
 
-.card-sombra{
+.sombra{
     transition: all 0.1s linear;
 }
 
-.card-sombra:hover{
-    box-shadow: 17px 14px 30px -1px rgba(0,0,0,0.5);
+.card-sombra:hover .sombra{
+    box-shadow: 20px 20px 24px 0px rgba(0,0,0,0.18);
 }
 
 .bannerContacto{

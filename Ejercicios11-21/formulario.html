@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena">
+            
+            <div class="my-3">
+                <select name="lenguajes" id="lenguajes" class="form-select">
+                    <option value="">Javascript</option>
+                    <option value="">Python</option>
+                    <option value="">C++</option>
+                </select>
+            </div>
+            
+            <div class="form-check">
+                <label class="form-check-label" for="check">Acepta los términos</label>
+                <input class="form-check-input" id="check" type="checkbox">
+            </div>
+    
+            <h6>¿Qué color te gusta?</h6>
+            <div class="form-check">
+                <label class="form-check-label" for="rojo">Rojo</label>
+                <input class="form-check-input" name="color" id="rojo" type="radio">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="verde">Verde</label>
+                <input class="form-check-input" name="color" id="verde" type="radio">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="azul">Azul</label>
+                <input class="form-check-input" name="color" id="azuls" type="radio">
+            </div>
+
+            <div class="my-3">
+                <label for="textito">Comentarios</label>
+                <textarea class="form-control" name="textito" id="textito" cols="10" rows="5"></textarea>
+            </div>
+
+            <div class="my-3">
+                <label for="edad">Selecciona tu edad:</label>
+                <input class="form-range" type="range" min="0" max="100">
+            </div>
+
+            <div class="my-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control">
+                    <label class="form-label" for="">Email</label>
+                </div>
+            </div>
+
+            <div class="my-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder=" ">
+                    <label class="form-label" for="">Email</label>
+                </div>
+            </div>
+
+            <div class="my-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder=" ">
+                    <span class="input-group-text" for="">@gmail.com</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

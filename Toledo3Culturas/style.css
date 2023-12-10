@@ -1,3 +1,7 @@
+:root{
+    --color-gold: #C0A34E;
+}
+
 .carousel{
     height: 500px;
 }
@@ -9,11 +13,19 @@
 .carousel-item img{
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 100%;
 }
 
 .nav-item{
     font-size: 14px;
+}
+
+.nav-item:hover{
+    background-color: rgb(240, 228, 162);
+}
+
+.active {
+    color: var(--color-gold) !important;
 }
 
 .menuGrande{
@@ -33,11 +45,11 @@
 }
 
 .gold{
-    color: goldenrod;
+    color: var(--color-gold);
 }
 
 .texto{
-    color: goldenrod;
+    color: var(--color-gold);
     font-size: 24px;
 }
     .texto p{
@@ -45,7 +57,7 @@
     }
 
 .h3{
-    color: goldenrod;
+    color: var(--color-gold);
 }
 
 .menu{
@@ -53,7 +65,7 @@
 }
 
 .card-title, .precio{
-    color: goldenrod;
+    color: var(--color-gold);
 }
 
 .precio{

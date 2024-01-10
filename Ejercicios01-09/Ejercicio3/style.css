@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+}
+
+.container
+{
+    height: 100%;
+    padding: 10px;
+}
+
+    .titulo {
+        text-align: center;
+        height: 10%;
+    }
+
+    .titulo h1 {
+        display: inline;
+    }
+
+    .titulo h5 {
+        font-weight: normal;
+        display: inline;
+    }
+
+    .containerGrid {
+        display: grid;
+        grid-template-areas:
+        "caja1 caja2 caja3"
+        "caja4 caja5 caja6"
+        "caja7 caja8 caja9"
+        "caja10 caja11 caja9";
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .containerGrid > div {
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+        .imagen {
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 80%;
+            max-width: 300px;
+        }
+
+        .caja1 {
+            grid-area: caja1;
+        }
+
+        .caja2 {
+            grid-area: caja2;
+        }
+
+        .caja3 {
+            grid-area: caja3;
+        }
+        
+        .caja4 {
+            grid-area: caja4;
+        }
+        
+        .caja5 {
+            grid-area: caja5;
+        }
+
+        .caja6 {
+            grid-area: caja6;
+        }
+
+        .caja7 {
+            grid-area: caja7;
+        }
+
+        .caja8 {
+            grid-area: caja8;
+        }
+
+        .caja9 {
+            grid-area: caja9;
+        }
+
+        .caja10 {
+            grid-area: caja10;
+        }
+
+        .caja11 {
+            grid-area: caja11;
+        }
+
+@media (max-width: 800px) {
+    .containerGrid {
+        grid-template-areas:
+        "caja1 caja2 caja2"
+        "caja4 caja5 caja6"
+        "caja7 caja8 caja9"
+        "caja10 caja11 caja9";
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

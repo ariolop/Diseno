@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 100vh;
+    background-color: #EEE;
 }
 
 .container
@@ -15,7 +15,7 @@ body {
 
     .titulo {
         text-align: center;
-        height: 10%;
+        height: 70px;
     }
 
     .titulo h1 {
@@ -35,12 +35,19 @@ body {
         "caja7 caja8 caja9"
         "caja10 caja11 caja9";
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-auto-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 
     .containerGrid > div {
-        border: 1px solid black;
+        border: 1px solid #CCC;
+        border-radius: 10px;
         padding: 20px;
+    }
+
+    .containerGrid > div:not(.caja9):hover {
+        border: 1px solid black;
+        background-color: #FFF;
     }
 
         .imagen {
@@ -86,6 +93,31 @@ body {
 
         .caja9 {
             grid-area: caja9;
+            background-color: black;
+            color: white;
+        }
+
+            .next {
+                margin-top: 15px;
+                width: 100%;
+                display: grid;
+                gap: 15px;
+                grid-template-columns: repeat(18, 1fr);
+            }
+
+                .pixel {
+                    background-color: rgb(255, 9, 9);
+                    width: 1px;
+                    height: 1px;
+                }
+
+        .caja9:hover #pixel0,                                                                   .caja9:hover #pixel4,
+        .caja9:hover #pixel18, .caja9:hover #pixel19,                                           .caja9:hover #pixel22,
+        .caja9:hover #pixel36,                      .caja9:hover #pixel38,                      .caja9:hover #pixel40,
+        .caja9:hover #pixel54,                                            .caja9:hover #pixel57,.caja9:hover #pixel58,
+        .caja9:hover #pixel72,                                                                  .caja9:hover #pixel76
+        {
+            background-color: rgb(21, 255, 0);
         }
 
         .caja10 {
@@ -96,14 +128,18 @@ body {
             grid-area: caja11;
         }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     .containerGrid {
         grid-template-areas:
-        "caja1 caja2 caja2"
-        "caja4 caja5 caja6"
-        "caja7 caja8 caja9"
-        "caja10 caja11 caja9";
-
+        "caja1 caja2"
+        "caja3 caja4"
+        "caja3 caja5"
+        "caja3 caja6"
+        "caja8 caja7"
+        "caja10 caja9"
+        "caja11 caja9"
+        ;
+        
         grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -43,6 +43,7 @@ body {
         border: 1px solid #CCC;
         border-radius: 10px;
         padding: 20px;
+        transition: background-color 0.3s linear;
     }
 
     .containerGrid > div:not(.caja9):hover {
@@ -106,18 +107,20 @@ body {
             }
 
                 .pixel {
-                    background-color: rgb(255, 9, 9);
+                    background-color: #999;
                     width: 1px;
                     height: 1px;
+                    transition: background-color, box-shadow 0.5s linear;
                 }
 
-        .caja9:hover #pixel0,                                                                   .caja9:hover #pixel4,
-        .caja9:hover #pixel18, .caja9:hover #pixel19,                                           .caja9:hover #pixel22,
-        .caja9:hover #pixel36,                      .caja9:hover #pixel38,                      .caja9:hover #pixel40,
-        .caja9:hover #pixel54,                                            .caja9:hover #pixel57,.caja9:hover #pixel58,
-        .caja9:hover #pixel72,                                                                  .caja9:hover #pixel76
+        .caja9:hover #pixel0,                                                                   .caja9:hover #pixel4,               .caja9:hover #pixel6, .caja9:hover #pixel7, .caja9:hover #pixel8,               .caja9:hover #pixel10,                                                                     .caja9:hover #pixel14,.caja9:hover #pixel15,.caja9:hover #pixel16,.caja9:hover #pixel17,
+        .caja9:hover #pixel18, .caja9:hover #pixel19,                                           .caja9:hover #pixel22,              .caja9:hover #pixel24,                                                                                  .caja9:hover #pixel29,                       .caja9:hover #pixel31,                                            .caja9:hover #pixel34,
+        .caja9:hover #pixel36,                      .caja9:hover #pixel38,                      .caja9:hover #pixel40,              .caja9:hover #pixel42, .caja9:hover #pixel43, .caja9:hover #pixel44,                                                           .caja9:hover #pixel48,                                                                  .caja9:hover #pixel52,
+        .caja9:hover #pixel54,                                            .caja9:hover #pixel57,.caja9:hover #pixel58,              .caja9:hover #pixel60,                                                                                  .caja9:hover #pixel65,                       .caja9:hover #pixel67,                                            .caja9:hover #pixel70,
+        .caja9:hover #pixel72,                                                                  .caja9:hover #pixel76,              .caja9:hover #pixel78, .caja9:hover #pixel79, .caja9:hover #pixel80,            .caja9:hover #pixel82,                                                                      .caja9:hover #pixel86,                     .caja9:hover #pixel88
         {
-            background-color: rgb(21, 255, 0);
+            background-color: #FFF;
+            box-shadow: 0 0 1px 1px rgba(50,145,255,.8),0 0 2px 1px rgba(50,145,255,.25)
         }
 
         .caja10 {
@@ -141,5 +144,25 @@ body {
         ;
         
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 680px) {
+    .containerGrid {
+        grid-template-areas:
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4"
+        "caja5"
+        "caja6"
+        "caja7"
+        "caja8"
+        "caja10"
+        "caja11"
+        "caja9" 
+        ;
+        
+        grid-template-columns: repeat(1, 1fr);
     }
 }

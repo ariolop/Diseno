@@ -1,0 +1,17 @@
+@mixin box($width: 100px, $height: 100px)
+{
+    width: $width;
+    height: $height;
+    border: 1px solid black;
+    @include rounded(20%);
+}
+
+@mixin flex-eve () {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin rounded ($rounded: 100%) {
+    border-radius: $rounded;
+}
+

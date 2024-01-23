@@ -1,0 +1,12 @@
+@use 'partials/body';
+@use 'partials/header';
+@use 'partials/main';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@include body.body();
+@include header.header();
+@include main.main();

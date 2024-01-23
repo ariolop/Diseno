@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: lightcyan;
+}
+
+header {
+  margin-bottom: 20px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  background-color: rgb(128, 202, 226);
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+header ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+}
+header ul li:hover a {
+  background-color: rgb(192, 239, 255);
+}
+
+main h1 {
+  color: red;
+  text-align: center;
+  margin: 20px;
+}
+main p {
+  color: green;
+  margin: 5px;
+  text-align: center;
+  font-size: em(20px);
+}
+main h2 {
+  color: red;
+  text-align: center;
+  margin: 15px;
+}
+main .boxes {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .boxes .box, main .boxes .unica {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20%;
+}
+main .boxes .unica {
+  background-color: red;
+  border-color: yellow;
+}
+main .lista {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+main .lista .li1 {
+  color: red;
+}
+main .lista .li2 {
+  color: blue;
+}
+main .lista .li3 {
+  color: red;
+}
+main .lista .li4 {
+  color: blue;
+}
+main .lista .li5 {
+  color: red;
+}
+main .cajas {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+main .cajas .caja1 {
+  background-color: red;
+}
+main .cajas .caja2 {
+  background-color: blue;
+}
+main .cajas .caja3 {
+  background-color: green;
+}
+main .cajas .caja4 {
+  background-color: yellow;
+}
+main .cajas .caja {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20%;
+}
+
+/*# sourceMappingURL=index.css.map */

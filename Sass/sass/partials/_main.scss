@@ -1,0 +1,98 @@
+@use 'variables' as var;
+@use 'mixins';
+
+
+@mixin main()
+{
+    main {
+        h1 {
+            color: var.$colorTitulo;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        p {
+            color: var.$colorParrafos;
+            margin: var.$margenParrafos;
+            text-align: center;
+            font-size: em(20px);
+        }
+        
+        h2 {
+            color: var.$colorTitulo;
+            text-align: center;
+            margin: 15px;
+        }
+        
+        .boxes {
+        
+            padding: 20px;
+            @include mixins.flex-eve();
+        
+            .box {
+                background-color: blue;
+                @include mixins.box(200px, 200px);
+                // @include box($height: 150px);
+                // @include box()
+            }
+        
+            .unica {
+                @extend .box;
+                background-color: red;
+                border-color: yellow;
+            }
+        }
+        
+        .lista {
+            @include mixins.flex-eve();
+            list-style: none;
+        
+            // @for $i from 1 through $cantidadItems {
+            //     .li#{$i} {
+            //         @if $i % 2 == 0{
+            //             color: blue;
+            //         }
+            //         @else
+            //         {
+            //             color: red;
+            //         }
+            //     }
+            // }
+        
+            $i: 1;
+            @while $i < var.$cantidadItems+1 {
+                .li#{$i} {
+                    @if $i % 2 == 0{
+                        color: blue;
+                    }
+                    @else
+                    {
+                        color: red;
+                    }
+                }
+                $i: $i+1;
+            }
+        }
+        
+        .cajas{
+        
+            @include mixins.flex-eve();
+            padding: 20px;
+        
+            $i: 1;
+            @each $color in var.$escalaColores {
+        
+                .caja#{$i}
+                {
+                    background-color: $color;
+                }
+        
+                $i: $i + 1;
+            }
+        
+            .caja {
+                @include mixins.box(200px,200px);    
+            }
+        }
+    }
+}

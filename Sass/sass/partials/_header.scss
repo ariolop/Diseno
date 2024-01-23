@@ -1,0 +1,29 @@
+@use 'variables';
+
+@mixin header () {
+    header {
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            background-color: variables.$menuColorBG;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+
+            li {
+                
+                a {
+                    color: variables.$colorEnlaces;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+            }
+
+            li:hover a {
+                background-color: variables.$hoverColorBG;
+            }
+        }
+    }
+}

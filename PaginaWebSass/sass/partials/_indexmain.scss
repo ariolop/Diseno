@@ -1,0 +1,79 @@
+@use 'variables';
+@use 'mixins';
+@use 'breakpoints';
+
+@mixin main() {
+    main {
+        height: 90vh;
+    
+        .container {
+            @include mixins.container();
+    
+            .imagen {
+                height: 300px;
+                width: 300px;
+                margin-right: 20px;
+    
+                @include mixins.img-100();
+                img {
+                    border-radius: 100%;
+                    border: 5px dashed variables.$colorMain;
+                    padding: 5px;
+                    box-sizing: border-box;
+                }
+            }
+    
+            .nombre {
+                width: 500px;
+                text-align: center;
+                margin-left: 20px;
+                color: variables.$colorMain;
+    
+                h1 {
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                }
+    
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 30px;
+                }
+                
+                a {
+                    background-color: #020617e6;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    border-radius: 30px;
+                }
+
+                .linkedin:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            @include breakpoints.md() {
+                flex-flow: column;
+
+                .imagen {
+                    height: 250px;
+                    width: 250px;
+                    margin-right: 0px;
+                }
+
+                .nombre {
+                    margin-top: 20px;
+                    margin-left: 0px;
+
+                    h1 {
+                        font-size: 30px;
+                    }
+        
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

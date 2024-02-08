@@ -1,0 +1,25 @@
+@use 'variables';
+
+@mixin sm {
+    @media (max-width: #{variables.$screen-sm-max}) {
+        @content;
+    }
+}
+ 
+@mixin md {
+    @media (max-width: #{variables.$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{variables.$screen-lg-max}) {
+        @content;
+    }
+}
+ 
+@mixin xl {
+    @media (max-width: #{variables.$screen-xl-max}) {
+        @content;
+    }
+}

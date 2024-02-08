@@ -1,0 +1,40 @@
+@mixin header () {
+    header {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: 15px auto;
+        border-radius: 50px;
+        
+        .logo {
+            width: 300px;
+            height: 100%;
+        }
+    
+        .lista {
+            width: 400px;
+            
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+    
+                li {
+    
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+    
+                    a:hover {
+                        background-color: #343c47;
+                    }
+                }
+            }
+        }
+    }
+}

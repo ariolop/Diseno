@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #20252C;
+  font-family: Arial;
+}
+
+header {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin: 15px auto;
+  border-radius: 50px;
+}
+header .logo {
+  width: 300px;
+  height: 100%;
+}
+header .lista {
+  width: 400px;
+}
+header .lista ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header .lista ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+header .lista ul li a:hover {
+  background-color: #343c47;
+}
+
+main {
+  margin-top: 40px;
+  height: 90vh;
+}
+main h1 {
+  color: white;
+  text-align: center;
+}
+main .container {
+  margin-top: 20px;
+}
+main .container .cartas {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+main .container .cartas .carta {
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+}
+main .container .cartas .carta .titulo {
+  margin-bottom: 10px;
+}
+main .container .cartas .carta .descripcion {
+  margin-bottom: 10px;
+}
+main .container .cartas .carta .descripcion p {
+  line-height: 25px;
+}
+main .container .cartas .carta .lenguajes {
+  margin-bottom: 15px;
+}
+main .container .cartas .carta .lenguajes p {
+  display: inline;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #20252C;
+  margin-right: 10px;
+  font-weight: bold;
+}
+main .container .cartas .carta .lenguajes p i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+main .container .cartas .carta .lenguajes .bg-lightred {
+  background-color: lightcoral;
+}
+main .container .cartas .carta .lenguajes .bg-lightblue {
+  background-color: lightblue;
+}
+main .container .cartas .carta .lenguajes .bg-lightpurple {
+  background-color: rgb(195, 150, 255);
+}
+main .container .cartas .carta .enlaces {
+  margin-top: 15px;
+}
+main .container .cartas .carta .enlaces a {
+  display: inline;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: white;
+  color: #20252C;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+main .container .cartas .carta .enlaces a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+main .container .cartas .carta .imagen img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  main .container .cartas .carta {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=proyectos.css.map */

@@ -1,8 +1,0 @@
-@use 'variables';
-
-@mixin body () {
-    body {
-        background: variables.$backgroundColor;
-        font-family: variables.$fuenteBody;
-    }
-}
